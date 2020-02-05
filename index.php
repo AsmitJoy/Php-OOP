@@ -121,6 +121,42 @@ include 'functions.php';
              unset($Persone_one);
             ?>            
     
+        <!-- Working with __construct() and __destruct() -->
+            <hr><hr><h3>Working with __construct() and __destruct()</h3><hr><hr>
+            <?php
+                class UserData{
+                    public $user;
+                    public $userid;
+                    
+                    public function __construct($user_name,$user_id){
+                        $this->user = $user_name;
+                        $this->userid = $user_id;
+
+                        echo "User Name is : ".$this->user."<br>User Id is : {$this->userid}";
+
+                    }
+                    public function __destruct(){
+                        unset($this->user);
+                        unset($this->userid);
+
+                    }
+                }
+
+                $US1_name = "Messi";
+                $US1_id   = "11";
+                $US1      = new UserData($US1_name,$US1_id); 
+            ?>
+
+        <!-- Working with __construct() and __destruct() -->
+            <hr><hr><h3>Working with __construct() and __destruct()</h3><hr><hr>
+            <?php
+               
+            ?>
+        <!-- Working with __construct() and __destruct() -->
+            <hr><hr><h3>Working with __construct() and __destruct()</h3><hr><hr>
+            <?php
+               
+            ?>
 
 
         </div>
