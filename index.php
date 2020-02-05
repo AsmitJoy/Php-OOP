@@ -1,4 +1,7 @@
-<?php include'header.php';?>
+<?php 
+include 'header.php';
+include 'functions.php';
+?>
 
     <div class="maincode" >
 
@@ -26,8 +29,59 @@
 
             ?>
 
+        <!-- Working with Method and Object -->
+            <hr><hr><h3>Working with Method and Object</h3><hr><hr>
+            <form method="post">
+                <table>
+                    <tr>
+                        <td>Enter the first Number</td>
+                        <td><input type="number" name="number_1" ></td>
+
+                    </tr>
+                    <tr>
+                        <td>Enter the seceond Number</td>
+                        <td><input type="number" name="number_2" ></td>
+                        <td></td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input style="padding:3px" type="submit" value="calculation" name="calculation"></td>
+
+                    </tr>
+                </table>
+            </form>
+            <?php
+                if (isset($_POST['calculation'])) {
+                    $num_one = $_POST['number_1'];
+                    $num_two = $_POST['number_2'];
+
+                    if (empty($num_one) or empty($num_two)) {
+                        echo"<span style='color:#EE5443'>Field must not be empty</span>";
+                    }else{
+
+                        $cal = new Calculator;
+                        $cal-> add($num_one,$num_two);
+                        $cal-> sub($num_one,$num_two);
+                        $cal-> multi($num_one,$num_two);
+                        $cal-> div($num_one,$num_two);
+                    }
+
+                }//end
+            ?>
+
+        <!-- Working with Method and Object -->
+            <hr><hr><h3>Working with Method and Object</h3><hr><hr>
+            <?php
+            
+            ?>
 
 
+        <!-- Working with Method and Object -->
+            <hr><hr><h3>Working with Method and Object</h3><hr><hr>
+            <?php
+            
+            ?>            
 
 
 
