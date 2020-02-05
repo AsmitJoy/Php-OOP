@@ -1,7 +1,7 @@
 <?php 
 include 'header.php';
 include 'functions.php';
-?>
+?> 
 
     <div class="maincode" >
 
@@ -98,14 +98,29 @@ include 'functions.php';
             ?>
 
 
-        <!-- Working with Method and Object -->
-            <hr><hr><h3>Working with Method and Object</h3><hr><hr>
+        <!-- Php Destructor -->
+            <hr><hr><h3>Php Destructor</h3><hr><hr>
             <?php
-            
+             class Footballer_1
+             {
+                 public $id;
+             
+                 public function SetId($id){
+                     $this->id = $id;
+                 }
+
+                 public function __destruct(){
+                    if (!empty($this->id)) {
+                        echo "Saving Player";
+                    }
+                 }
+             }
+
+             $Persone_one = new Footballer_1("Marcelo","18"); //Object
+             $Persone_one->SetId(7);
+             unset($Persone_one);
             ?>            
-
-
-
+    
 
 
         </div>
