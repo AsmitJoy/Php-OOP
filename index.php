@@ -28,6 +28,8 @@ include 'functions.php';
                 $Persone_one->PersonAge("17");
 
             ?>
+            <!-- End -->
+
 
         <!-- Working with Method and Object -->
             <hr><hr><h3>Working with Method and Object</h3><hr><hr>
@@ -70,10 +72,29 @@ include 'functions.php';
                 }//end
             ?>
 
-        <!-- Working with Method and Object -->
-            <hr><hr><h3>Working with Method and Object</h3><hr><hr>
+        <!-- Php Constructor -->
+            <hr><hr><h3>Php Constructor</h3><hr><hr>
             <?php
-            
+                class Footballer
+                {
+                    public $name; //Property
+                    public $age; //Property
+
+                    public function __construct($nam,$ag){
+                        $this->name = $nam;
+                        $this->age = $ag;
+                    }
+                
+                    public function PersonDetails(){ //Method
+                        echo "Player Name is : ".$this->name."<br>Player age is : {$this->age}";
+                    }
+
+                }
+
+                $Persone_one = new Footballer("Marcelo","18"); //Object
+                $Persone_one->PersonDetails();
+                
+
             ?>
 
 
