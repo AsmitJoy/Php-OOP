@@ -147,10 +147,20 @@ include 'functions.php';
                 $US1      = new UserData($US1_name,$US1_id); 
             ?>
 
-        <!-- Working with __construct() and __destruct() -->
-            <hr><hr><h3>Working with __construct() and __destruct()</h3><hr><hr>
+        <!-- Class Constant -->
+            <hr><hr><h3>Class Constant</h3><hr><hr>
             <?php
-               
+                class Game{
+
+                    const Name = "Far Cry 10";
+
+                    public function gamer(){
+                        echo"Ful Name is: ".Game::Name;
+                    }
+
+               }
+               $game_one = new Game;
+               $game_one->gamer();
             ?>
         <!-- Working with __construct() and __destruct() -->
             <hr><hr><h3>Working with __construct() and __destruct()</h3><hr><hr>
