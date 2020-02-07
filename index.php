@@ -178,10 +178,44 @@ include 'functions.php';
 
             ?>
 
-        <!-- Working with __construct() and __destruct() -->
-            <hr><hr><h3>Working with __construct() and __destruct()</h3><hr><hr>
+        <!-- Inheritance -->
+            <hr><hr><h3>Inheritance</h3><hr><hr>
             <?php
-               
+                class Userdeatils
+                {
+                    public $name; //Property
+                    public $age; //Property
+
+                    public function __construct($nam,$ag){
+                        $this->name = $nam;
+                        $this->age = $ag;
+                    }
+                
+                    public function PersonDetails(){ //Method
+                        echo "Player Name is : ".$this->name."<br>Player age is : {$this->age}<br>";
+                    }
+
+                }
+
+                class Admin extends Userdeatils //Admin is subclass
+                {
+                    public $level;
+                    public function PersonDetails(){ //Method
+                        echo "Player Name is : ".$this->name."<br>Player age is : {$this->age}<br>Player level is:{$this->level}<br>";//subclass method will overwrite main class method if they are same
+                    }
+                }
+                
+
+                $person_name = "Lukaku" ;
+                $person_age  = "08" ;
+
+                $Persone_one = new Userdeatils($person_name,$person_age); //Object
+                $Persone_one->PersonDetails();
+
+                $admin_1 = new Admin($person_name,$person_age);//object of subclass
+                $admin_1 ->level = "Adminastator";
+                $admin_1->PersonDetails();
+
             ?>
 
         <!-- Working with __construct() and __destruct() -->
