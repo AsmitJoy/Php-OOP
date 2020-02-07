@@ -218,10 +218,14 @@ include 'functions.php';
 
             ?>
 
-        <!-- Working with __construct() and __destruct() -->
-            <hr><hr><h3>Working with __construct() and __destruct()</h3><hr><hr>
+        <!-- Access Modifires -->
+            <hr><hr><h3> Access Modifires </h3><hr><hr>
             <?php
-               
+                echo"
+                    public    = using this access modifire we can call poperty or method anywhere of the Class,Object and Subclass. <br>
+                    private   = using this access modifire we can call poperty or method only from  the Class. <br>
+                    protected = using this access modifire we can call poperty or method only from the Class,Subclass not Method.
+                    ";
             ?>
         <!-- Working with __construct() and __destruct() -->
             <hr><hr><h3>Working with __construct() and __destruct()</h3><hr><hr>
