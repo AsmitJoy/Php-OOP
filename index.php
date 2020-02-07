@@ -181,7 +181,7 @@ include 'functions.php';
         <!-- Inheritance -->
             <hr><hr><h3>Inheritance</h3><hr><hr>
             <?php
-                class Userdeatils
+                class Userdeatils //We can use "final" keyword from preventing extending and ovverridding of a Class
                 {
                     public $name; //Property
                     public $age; //Property
@@ -191,7 +191,7 @@ include 'functions.php';
                         $this->age = $ag;
                     }
                 
-                    public function PersonDetails(){ //Method
+                    public function PersonDetails(){ //We can use "final" keyword from preventing extending and ovverridding of a Method
                         echo "Player Name is : ".$this->name."<br>Player age is : {$this->age}<br>";
                     }
 
@@ -223,7 +223,16 @@ include 'functions.php';
             <?php
                
             ?>
-
+        <!-- Working with __construct() and __destruct() -->
+            <hr><hr><h3>Working with __construct() and __destruct()</h3><hr><hr>
+            <?php
+               
+            ?>
+        <!-- Working with __construct() and __destruct() -->
+            <hr><hr><h3>Working with __construct() and __destruct()</h3><hr><hr>
+            <?php
+               
+            ?>
 
         </div>
     </div>
