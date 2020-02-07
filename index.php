@@ -162,6 +162,28 @@ include 'functions.php';
                $game_one = new Game;
                $game_one->gamer();
             ?>
+        <!-- Static Poperty and Static Method -->
+            <hr><hr><h3>Static Poperty and Static Method</h3><hr><hr>
+            <?php
+               class Stat{
+                   public static $age = 35;
+
+                   public static function display(){
+                       echo"Age is: ".self::$age;//"::"->this called scope resoulation operator
+                   }
+
+               }
+
+               Stat::display();//Static Method can call  without create class object
+
+            ?>
+
+        <!-- Working with __construct() and __destruct() -->
+            <hr><hr><h3>Working with __construct() and __destruct()</h3><hr><hr>
+            <?php
+               
+            ?>
+
         <!-- Working with __construct() and __destruct() -->
             <hr><hr><h3>Working with __construct() and __destruct()</h3><hr><hr>
             <?php
