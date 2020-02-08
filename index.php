@@ -32,7 +32,7 @@ include 'functions.php';
 
 
         <!-- Working with Method and Object -->
-            <hr><hr><h3>Working with Method and Object</h3><hr><hr>
+            <hr><hr><h3>Working with Method and Object [Calculator]</h3><hr><hr>
             <form method="post">
                 <table>
                     <tr>
@@ -227,10 +227,31 @@ include 'functions.php';
                     protected = using this access modifire we can call poperty or method only from the Class,Subclass not Method.
                     ";
             ?>
-        <!-- Working with __construct() and __destruct() -->
-            <hr><hr><h3>Working with __construct() and __destruct()</h3><hr><hr>
+        <!-- Polymorphism -->
+            <hr><hr><h3>Polymorphism </h3><hr><hr>
             <?php
-               
+
+                echo"When we start to extend classes, and add
+                 functionality to them which wasn't there previously, 
+                 and even override existing methods (functions), 
+                 this is callde Polymorphism;
+                 this is callde Polymorphism.<br>The basis of  is Inheritance and override Method.";
+                
+                 class Customar_Shovon //We can use "final" keyword from preventing extending and ovverridding of a Class
+                 {
+                    
+                 }
+ 
+                 class Admin_joy extends Customar_Shovon //Admin is subclass
+                 {
+                     
+                 }
+
+                 $admin = new Admin_joy;
+                 if ($admin instanceof Customar_Shovon) {
+                     echo"<br>Inherited";
+                 }
+              
             ?>
         <!-- Working with __construct() and __destruct() -->
             <hr><hr><h3>Working with __construct() and __destruct()</h3><hr><hr>
