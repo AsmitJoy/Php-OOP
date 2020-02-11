@@ -235,7 +235,7 @@ include 'functions.php';
                  functionality to them which wasn't there previously, 
                  and even override existing methods (functions), 
                  this is callde Polymorphism;
-                 this is callde Polymorphism.<br>The basis of  is Inheritance and override Method.";
+                 .<br>The basis of  is Inheritance and override Method.";
                 
                  class Customar_Shovon //We can use "final" keyword from preventing extending and ovverridding of a Class
                  {
@@ -253,12 +253,56 @@ include 'functions.php';
                  }
               
             ?>
+        <!--Interface -->
+            <hr><hr><h3>Interface</h3><hr><hr>
+            <?php
+
+                interface School{
+                    public function my_school();
+                }
+                interface College{
+                    public function my_college();
+                }
+                interface Varsity{
+                    public function my_varsity();
+                }
+
+                class Teacher implements School, College, Varsity{
+
+                    public function __construct(){
+                        $this->my_school();
+                        $this->my_college();
+                        $this->my_varsity();
+                    }
+                    
+                    public function my_school(){
+                        echo"I am a school Teacher<br>";   
+                    }
+
+                    public function my_college(){
+                        echo"I am a college Teacher<br>";   
+                    }
+
+                    public function my_varsity(){
+                        echo"I am a varsity Teacher";   
+                    }
+                }
+                 
+                $teacher = new Teacher;
+            ?>
+
         <!-- Working with __construct() and __destruct() -->
             <hr><hr><h3>Working with __construct() and __destruct()</h3><hr><hr>
             <?php
                
             ?>
 
+        <!--Interface -->
+            <hr><hr><h3>Interface</h3><hr><hr>
+            <?php
+
+            ?>
+       
         </div>
     </div>
 </body>
