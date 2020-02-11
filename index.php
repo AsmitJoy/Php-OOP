@@ -253,7 +253,7 @@ include 'functions.php';
                  }
               
             ?>
-        <!--Interface -->
+        <!-- Interface -->
             <hr><hr><h3>Interface</h3><hr><hr>
             <?php
 
@@ -291,13 +291,44 @@ include 'functions.php';
                 $teacher = new Teacher;
             ?>
 
-        <!-- Working with __construct() and __destruct() -->
-            <hr><hr><h3>Working with __construct() and __destruct()</h3><hr><hr>
+        <!-- Abstract_class -->
+            <hr><hr><h3>Abstract_class</h3><hr><hr>
             <?php
-               
+
+                echo"We can not create directly an object to an abstract class. For this we have to create sub class.In a abstract class we can only create abstract method name.<br>";
+                
+                abstract class x_students{
+
+                    public $name;
+                    public $age;
+                    public function details(){
+                        echo $this->name." is ".$this->age." years old";
+                    }
+
+                    abstract public function school();
+                }
+
+                class Boy extends x_students{
+
+                    public function describe(){
+                        return parent::details().". And i am a school.<br> ";
+                    }
+
+                    public function school(){
+                        return"I like to watch a full football Match";
+                    }
+
+                }
+
+                $s = new Boy;
+                $s->name = "Asmit";
+                $s->age = "17";
+                echo $s->describe();
+                echo $s->school();
+
             ?>
 
-        <!--Interface -->
+        <!-- Interface -->
             <hr><hr><h3>Interface</h3><hr><hr>
             <?php
 
