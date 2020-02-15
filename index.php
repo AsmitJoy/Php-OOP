@@ -333,6 +333,16 @@ include 'functions.php';
             <?php
 
             ?>
+         <!-- Interface -->
+            <hr><hr><h3>Interface</h3><hr><hr>
+            <?php
+
+            ?>
+        <!-- Interface -->
+            <hr><hr><h3>Interface</h3><hr><hr>
+            <?php
+
+            ?>
        
         </div>
     </div>
