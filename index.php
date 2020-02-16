@@ -328,9 +328,33 @@ include 'functions.php';
 
             ?>
 
-        <!-- Interface -->
-            <hr><hr><h3>Interface</h3><hr><hr>
+        <!-- Magic Method -->
+            <hr><hr><h3>Magic Method</h3><hr><hr>
             <?php
+
+                class Student_cse{
+                    public $name;
+
+                    public function describe(){
+                        echo"i am a student.<br>";
+                    }
+
+                    public function __get($sp){
+                        echo"$sp dosen't exist<br>";
+                    }
+                    public function __set($sp,$value){
+                        echo"We set $sp->$value<br>";
+                    }
+
+                    public function __call($sp,$value){
+                        echo"There is no".$sp. " method and Arguments:".implode(', ',$value);
+                    }
+                }
+                $st = new Student_cse();
+                $st->describe();
+                $st->Joy;
+                $st->age=22;
+                $st->notExistMethod('2','4','8');
 
             ?>
          <!-- Interface -->
