@@ -357,9 +357,21 @@ include 'functions.php';
                 $st->notExistMethod('2','4','8');
 
             ?>
-         <!-- Interface -->
-            <hr><hr><h3>Interface</h3><hr><hr>
+        <!-- Class and Method existence -->
+            <hr><hr><h3>Class and Method existence</h3><hr><hr>
             <?php
+                
+                if (class_exists("Calculator")) {
+                    echo"Class Found<br>";
+                }else{
+                    echo "Class not found<br>";
+                }
+                $cal = new Calculator;
+                if (method_exists($cal,'A_Shovon')) {
+                    echo"Method Exist";
+                }else{
+                    echo"Method not Exist";
+                }
 
             ?>
         <!-- Interface -->
