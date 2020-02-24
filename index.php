@@ -381,17 +381,19 @@ include 'functions.php';
                 echo"Check Tutorial-16";
 
             ?>
-        <!-- Interface -->
-        <hr><hr><h3>Interface</h3><hr><hr>
+        <!-- Method-chaining -->
+        <hr><hr><h3>Method-chaining</h3><hr><hr>
             <?php
+
+                $cal = new Calculation_2;
+                echo "Result is: ".$cal->getValue(2,3)->getResult();
 
 
             ?>
         <!-- Interface -->
         <hr><hr><h3>Interface</h3><hr><hr>
             <?php
-
-
+               
             ?>
        
         </div>
