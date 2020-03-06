@@ -382,13 +382,37 @@ include 'functions.php';
 
             ?>
         <!-- Method-chaining -->
-        <hr><hr><h3>Method-chaining</h3><hr><hr>
+         <hr><hr><h3>Method-chaining</h3><hr><hr>
             <?php
 
                 $cal = new Calculation_2;
                 echo "Result is: ".$cal->getValue(2,3)->getResult();
 
 
+            ?>
+        <!-- Type Hinting -->
+         <hr><hr><h3>Type Hinting</h3><hr><hr>
+            <?php
+               class ball{
+                   public function multi(array $x){
+                        foreach($x as $value){
+                            echo $value[0];
+                            echo ":";
+                            echo $value[1]*$value[2]."<br>";
+                        }
+                   }
+               }
+               $ucl_ball = new ball;
+               $num = array(
+                   array("Number One ",10,20),
+                   array("Number Two ",20,20)
+               );
+               $ucl_ball->multi($num);
+            ?>
+        <!-- Interface -->
+        <hr><hr><h3>Interface</h3><hr><hr>
+            <?php
+               
             ?>
         <!-- Interface -->
         <hr><hr><h3>Interface</h3><hr><hr>
