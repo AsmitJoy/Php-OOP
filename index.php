@@ -409,9 +409,35 @@ include 'functions.php';
                );
                $ucl_ball->multi($num);
             ?>
-        <!-- Interface -->
-        <hr><hr><h3>Interface</h3><hr><hr>
+        <!-- Object Iteration -->
+        <hr><hr><h3>Object Iteration</h3><hr><hr>
             <?php
+               class Good_person{
+                   public $Name  = "Asmit Das";
+                   public $Age   = "17";
+                   public $Skill = "Football";
+
+                   private $email      = "aj17@gmail.com";
+                   protected $password = "1234";
+
+                   public function interatorInner(){
+                       
+                    echo"Inside Class";
+                    foreach ($this as $key => $value) {
+                        echo"<pre>";
+                        echo"$key = $value";
+                        echo"</pre>";
+                        }
+                   }
+               }
+               $person = new Good_person;
+               foreach ($person as $key => $value) {
+                echo"<pre>";
+                echo"$key = $value";
+                echo"</pre>";
+                }
+               $person->interatorInner();
+
                
             ?>
         <!-- Interface -->
