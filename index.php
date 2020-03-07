@@ -440,8 +440,47 @@ include 'functions.php';
 
                
             ?>
+        <!-- Using Traits -->
+         <hr><hr><h3>Using Traits</h3><hr><hr>
+            <?php
+                trait Java{
+                   public function Javacoder(){
+                        return"I love java<br>";
+                   }
+                }
+                trait Php{
+                public function Phpcoder(){
+                     return"I love php<br>";
+                    }
+                }
+                trait Java_Php{
+                    use Java,Php;
+                }
+                Class One{
+                    use java;
+                }
+                Class two{
+                    use Php;
+                }
+                Class Three{
+                    use Java_Php;
+                }
+                $c1 = new One;
+                echo $c1->Javacoder();
+                $c2 = new Two;
+                echo $c2->Phpcoder();
+                $c2 = new Three;
+                echo $c2->Javacoder();
+                echo $c2->Phpcoder();
+            
+            ?>
         <!-- Interface -->
-        <hr><hr><h3>Interface</h3><hr><hr>
+         <hr><hr><h3>Interface</h3><hr><hr>
+            <?php
+               
+            ?>
+        <!-- Interface -->
+         <hr><hr><h3>Interface</h3><hr><hr>
             <?php
                
             ?>
