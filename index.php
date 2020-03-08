@@ -410,7 +410,7 @@ include 'functions.php';
                $ucl_ball->multi($num);
             ?>
         <!-- Object Iteration -->
-        <hr><hr><h3>Object Iteration</h3><hr><hr>
+         <hr><hr><h3>Object Iteration</h3><hr><hr>
             <?php
                class Good_person{
                    public $Name  = "Asmit Das";
@@ -474,10 +474,29 @@ include 'functions.php';
                 echo $c2->Phpcoder();
             
             ?>
-        <!-- Interface -->
-         <hr><hr><h3>Interface</h3><hr><hr>
+        <!-- _Class_ and get_class -->
+         <hr><hr><h3>_Class_ and get_class</h3><hr><hr>
             <?php
-               
+                abstract class Python{
+                   public function Framework()
+                   {
+                    echo "Base Class Constant and class name->".__CLASS__."<br>";
+                    echo "Base Class Function and class name->".get_class($this)."<br>";
+
+                   }
+               }
+               class Python_child extends Python{
+                   public function cms()
+                   {
+                    echo "Child Class Constant and class name->".__CLASS__."<br>";
+                    echo "Child Class Function and class name->".get_class($this)."<br>";
+                   }
+               }
+               $new = new Python_child;
+               $new->Framework();
+               echo"<hr>";
+               $new->cms();
+
             ?>
         <!-- Interface -->
          <hr><hr><h3>Interface</h3><hr><hr>
