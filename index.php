@@ -498,6 +498,11 @@ include 'functions.php';
                $new->cms();
 
             ?>
+        <!-- Late Static Building -->
+         <hr><hr><h3>Late Static Building</h3><hr><hr>
+            <?php
+               echo"<i>Watch Ttorial</i>";
+            ?>
         <!-- Interface -->
          <hr><hr><h3>Interface</h3><hr><hr>
             <?php
