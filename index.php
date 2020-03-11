@@ -503,12 +503,46 @@ include 'functions.php';
             <?php
                echo"<i>Watch Ttorial</i>";
             ?>
-        <!-- Interface -->
-         <hr><hr><h3>Interface</h3><hr><hr>
+        <!-- Object Cloning -->
+         <hr><hr><h3>Object Cloningcc</h3><hr><hr>
+            <?php
+                class Language{
+                    Private $category;
+                    Private $framework;
+
+                    public function setCat($a){
+                        $this->catagory = $a;
+                    }
+                    public function getCat(){
+                        return $this->catagory;
+                    }
+                    public function setFrame($b){
+                        $this->framework = $b;
+                    }
+                    public function getFrame(){
+                        return $this->framework ;
+                    }
+
+                }
+                $java = new Language;
+                $java->setCat("OOP");
+                $java->setFrame("Spring");
+
+                $php = clone $java;
+                $php->setCat("Joy"); 
+
+                echo $php->getCat()."<br>";
+                echo $php->getFrame()."<br>";
+                
+                echo $java->getCat()."<br>";
+                echo $java->getFrame()."<br>";
+
+            ?>
+       <!-- Interface -->
+        <hr><hr><h3>Interface</h3><hr><hr>
             <?php
                
             ?>
-       
         </div>
     </div>
 </body>
