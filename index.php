@@ -550,8 +550,8 @@ include 'functions.php';
                 for($i=0; $i<10; $i++){ }
                 $arr = array("Html","Css","Php","Java");
                 $coding = new ArrayObject($arr);
-                $coding->append("jj");
-                
+                $coding->append("Dart");
+
                 $iterator = $coding->getIterator();
                 while ($iterator ->valid()) {
                     echo $iterator->current()."<br>";
@@ -559,9 +559,20 @@ include 'functions.php';
                 }
 
             ?>
-        <!-- Interface -->
-         <hr><hr><h3>Interface</h3><hr><hr>
+        <!-- Standard Php Library -->
+         <hr><hr><h3>Standard Php Library</h3><hr><hr>
             <?php
+                $arr = array("Html","Css","Php","Java");
+                $ai = new ArrayIterator($arr);
+                echo $ai->current()."<br>";
+                $ci = new CachingIterator($ai);
+
+                foreach ($ci as $value) {
+                    echo $value;
+                    if($ci->hasNext()) {
+                        echo", ";
+                    }
+                }
                
             ?>
         <!-- Interface -->
