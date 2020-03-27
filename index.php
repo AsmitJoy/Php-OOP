@@ -503,8 +503,8 @@ include 'functions.php';
             <?php
                echo"<i>Watch Ttorial</i>";
             ?>
-        <!-- Object Cloning -->
-         <hr><hr><h3>Object Cloningcc</h3><hr><hr>
+        <!-- Object Cloning and Magic __clone -->
+         <hr><hr><h3>Object Cloning and Magic __clone</h3><hr><hr>
             <?php
                 class Language{
                     Private $category;
@@ -521,6 +521,11 @@ include 'functions.php';
                     }
                     public function getFrame(){
                         return $this->framework ;
+                    }
+                    public function __clone(){
+                        $lang = new Language();
+                        $lang->setFrame($this->framework);
+                        return $lang;
                     }
 
                 }
