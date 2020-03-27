@@ -543,8 +543,29 @@ include 'functions.php';
                 echo $java->getFrame()."<br>";
 
             ?>
-       <!-- Interface -->
-        <hr><hr><h3>Interface</h3><hr><hr>
+        <!-- ArrayObject -->
+         <hr><hr><h3>ArrayObject</h3><hr><hr>
+            <?php
+
+                for($i=0; $i<10; $i++){ }
+                $arr = array("Html","Css","Php","Java");
+                $coding = new ArrayObject($arr);
+                $coding->append("jj");
+                
+                $iterator = $coding->getIterator();
+                while ($iterator ->valid()) {
+                    echo $iterator->current()."<br>";
+                    $iterator->next();
+                }
+
+            ?>
+        <!-- Interface -->
+         <hr><hr><h3>Interface</h3><hr><hr>
+            <?php
+               
+            ?>
+        <!-- Interface -->
+         <hr><hr><h3>Interface</h3><hr><hr>
             <?php
                
             ?>
