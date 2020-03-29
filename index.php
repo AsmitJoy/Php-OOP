@@ -621,10 +621,10 @@ include "namespace.php";
                echo"Watch Tutorial";
             ?>
 
-        <!-- Interface -->
-         <hr><hr><h3>Interface</h3><hr><hr>
+        <!-- Factory Design Pattern -->
+         <hr><hr><h3>Factory Design Pattern</h3><hr><hr>
             <?php
-               
+                echo"Watch Tutorial";
             ?>
         <!-- Interface -->
          <hr><hr><h3>Interface</h3><hr><hr>
