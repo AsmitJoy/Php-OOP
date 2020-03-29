@@ -1,6 +1,7 @@
 <?php 
 include 'header.php';
 include 'functions.php';
+include "namespace.php";
 ?> 
 
     <div class="maincode" >
@@ -604,10 +605,15 @@ include 'functions.php';
               echo"</pre>";
 
             ?>
-        <!-- Interface -->
-         <hr><hr><h3>Interface</h3><hr><hr>
+        <!-- Namespaces -->
+         <hr><hr><h3>Namespaces</h3><hr><hr>
             <?php
-               
+            
+            use joy\coding as ru;
+            new ru();
+            echo Html;
+            echo joy\CSS;
+
             ?>
         <!-- Interface -->
          <hr><hr><h3>Interface</h3><hr><hr>
