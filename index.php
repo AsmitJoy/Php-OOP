@@ -575,6 +575,45 @@ include 'functions.php';
                 }
                
             ?>
+        <!-- Object Serialization -->
+         <hr><hr><h3>Object Serialization </h3><hr><hr>
+            <?php
+               Class Programming{
+                   public    $html;
+                   public    $css;
+                   private   $php;
+                   protected $java;
+
+                   function __construct(){
+                       $this->html = "I know Html";
+                       $this->css  = "I know Css";
+                       $this->php  = "I am Php Coder";
+                       $this->Java = "I am java programmer";
+                   }
+                }
+                $pro = new Programming();
+                $ser = serialize($pro);
+                /*
+                file_put_contents("proramming.txt",$ser);
+                echo $ser;
+               */
+              $getcon = file_get_contents("proramming.txt");
+              $unser = unserialize($getcon);
+              echo"<pre>";
+              print_r($unser);
+              echo"</pre>";
+
+            ?>
+        <!-- Interface -->
+         <hr><hr><h3>Interface</h3><hr><hr>
+            <?php
+               
+            ?>
+        <!-- Interface -->
+         <hr><hr><h3>Interface</h3><hr><hr>
+            <?php
+               
+            ?>
         <!-- Interface -->
          <hr><hr><h3>Interface</h3><hr><hr>
             <?php
