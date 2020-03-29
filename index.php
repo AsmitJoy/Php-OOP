@@ -615,6 +615,12 @@ include "namespace.php";
             echo joy\CSS;
 
             ?>
+        <!-- Strategy Design Pattern -->
+         <hr><hr><h3>Strategy Design Pattern</h3><hr><hr>
+            <?php
+               echo"Watch Tutorial";
+            ?>
+
         <!-- Interface -->
          <hr><hr><h3>Interface</h3><hr><hr>
             <?php
