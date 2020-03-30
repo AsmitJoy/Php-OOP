@@ -626,6 +626,16 @@ include "namespace.php";
             <?php
                 echo"Watch Tutorial";
             ?>
+        <!-- Abstract Factory Design Pattern -->
+         <hr><hr><h3>Abstract Factory Design Pattern</h3><hr><hr>
+            <?php
+                echo"Watch Tutorial"; 
+            ?>
+        <!-- Interface -->
+         <hr><hr><h3>Interface</h3><hr><hr>
+            <?php
+               
+            ?>
         <!-- Interface -->
          <hr><hr><h3>Interface</h3><hr><hr>
             <?php
