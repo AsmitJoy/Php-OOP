@@ -634,7 +634,24 @@ include "namespace.php";
         <!-- Singleton Design Pattern -->
          <hr><hr><h3>Singleton Design Pattern</h3><hr><hr>
             <?php
-               
+               class Lopa{
+                   private  static $i;
+                   public function __construct(){
+                       if (!self::$i) {
+                        self::$i = $this;
+                        echo"Created New One.<br>";
+                        return self::$i;
+                       }else{
+                            echo"Old One Instance<br>";
+                            return self::$i;
+                       }
+                   }
+               }
+               new Lopa;
+               new Lopa;
+               new Lopa;
+               new Lopa;
+
             ?>
         <!-- Interface -->
          <hr><hr><h3>Interface</h3><hr><hr>
