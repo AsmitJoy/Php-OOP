@@ -632,7 +632,7 @@ include "namespace.php";
                 echo"Watch Tutorial"; 
             ?>
         <!-- Singleton Design Pattern -->
-         <hr><hr><h3>Singleton Design Pattern</h3><hr><hr>
+         <hr><hr><h3>  </h3><hr><hr>
             <?php
                class Lopa{
                    private  static $i;
@@ -652,6 +652,26 @@ include "namespace.php";
                new Lopa;
                new Lopa;
 
+            ?>
+        <!-- Iterator Design Pattern -->
+         <hr><hr><h3>Iterator Design Pattern</h3><hr><hr>
+            <?php
+                echo"Watch Tutorial[Php-OOP-Part33]"; 
+            ?>
+        <!-- Interface -->
+         <hr><hr><h3>Interface</h3><hr><hr>
+            <?php
+               
+            ?>
+        <!-- Interface -->
+         <hr><hr><h3>Interface</h3><hr><hr>
+            <?php
+               
+            ?>
+        <!-- Interface -->
+         <hr><hr><h3>Interface</h3><hr><hr>
+            <?php
+               
             ?>
         <!-- Interface -->
          <hr><hr><h3>Interface</h3><hr><hr>
