@@ -658,10 +658,11 @@ include "namespace.php";
             <?php
                 echo"Watch Tutorial[Php-OOP-Part33]"; 
             ?>
-        <!-- Interface -->
-         <hr><hr><h3>Interface</h3><hr><hr>
+        <!-- Observer Design Pattern -->
+         <hr><hr><h3>Observer Design Pattern</h3><hr><hr>
             <?php
-               
+                echo"Watch Tutorial[Php-OOP-Part34]"; 
+
             ?>
         <!-- Interface -->
          <hr><hr><h3>Interface</h3><hr><hr>
