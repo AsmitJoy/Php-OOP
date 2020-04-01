@@ -664,10 +664,10 @@ include "namespace.php";
                 echo"Watch Tutorial[Php-OOP-Part34]"; 
 
             ?>
-        <!-- Interface -->
-         <hr><hr><h3>Interface</h3><hr><hr>
+        <!-- Decorator Design Pattern -->
+         <hr><hr><h3>Decorator Design Pattern</h3><hr><hr>
             <?php
-               
+                echo"Watch Tutorial[Php-OOP-Part35]"; 
             ?>
         <!-- Interface -->
          <hr><hr><h3>Interface</h3><hr><hr>
