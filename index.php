@@ -683,7 +683,24 @@ include "namespace.php";
                     echo"connection fail";
                 }else{
                     echo"sucessfully connected";
+                    
                 }
+
+                //$sql = "UPDATE records SET email ='Lopanu@gmail.com' WHERE id='1' ";
+                $sql = "SELECT * FROM records";
+                $result = $db->query($sql);
+                while ($data = $result->fetch_object()) {
+                    echo"<pre>";
+                    echo $data->name;
+                    echo"</pre>";
+                    echo"<pre>";
+                    echo $data->email;
+                    echo"</pre>";
+
+
+                }
+
+
             ?>
         <!-- Interface -->
          <hr><hr><h3>Interface</h3><hr><hr>
