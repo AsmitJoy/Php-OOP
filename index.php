@@ -675,10 +675,15 @@ include "namespace.php";
                 echo"Watch Tutorial[Php-OOP-Part36]"; 
                
             ?>
-        <!-- Interface -->
-         <hr><hr><h3>Interface</h3><hr><hr>
+        <!-- MySQL Connect Way -->
+         <hr><hr><h3>MySQL Connect Way</h3><hr><hr>
             <?php
-               
+                $db = new mysqli("localhost","root","","userdata");
+                if (mysqli_connect_errno()) {
+                    echo"connection fail";
+                }else{
+                    echo"sucessfully connected";
+                }
             ?>
         <!-- Interface -->
          <hr><hr><h3>Interface</h3><hr><hr>
