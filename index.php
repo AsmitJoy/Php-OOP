@@ -669,6 +669,17 @@ include "namespace.php";
             <?php
                 echo"Watch Tutorial[Php-OOP-Part35]"; 
             ?>
+        <!-- Facade Design Pattern -->
+         <hr><hr><h3>Facade Design Pattern</h3><hr><hr>
+            <?php
+                echo"Watch Tutorial[Php-OOP-Part36]"; 
+               
+            ?>
+        <!-- Interface -->
+         <hr><hr><h3>Interface</h3><hr><hr>
+            <?php
+               
+            ?>
         <!-- Interface -->
          <hr><hr><h3>Interface</h3><hr><hr>
             <?php
